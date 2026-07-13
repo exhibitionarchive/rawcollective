@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>原质社 RAW COLLECTIVE</title>
+    <meta
+      name="description"
+      content="Raw Collective is a bilingual team archive for members, projects, exhibitions, prizes, and research."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="原质社 RAW COLLECTIVE home">
+        <img class="brand-logo" src="./assets/raw-collective-text-logo-trimmed.png" alt="原质社 RAW COLLECTIVE" />
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#about" data-route="about">About</a>
+        <a class="nav-link" href="#members" data-route="members">Members</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="view landing-view is-active" data-view="home" aria-labelledby="home-title">
+        <figure class="identity-panel" aria-label="Raw Collective visual identity">
+          <img class="collective-logo" src="./assets/raw-collective-logo-trimmed.png" alt="原质社 Raw Collective logo" />
+          <figcaption>
+            <span>Strip away the superfluous. Return to the essential.</span>
+            <span lang="zh-Hant">去除多餘，回到本質。</span>
+          </figcaption>
+        </figure>
+        <h1 id="home-title" class="visually-hidden">原质社 RAW COLLECTIVE</h1>
+      </section>
+
+      <section id="about" class="view" data-view="about" aria-labelledby="about-title">
+        <div class="statement-grid">
+          <article>
+            <h1 id="about-title">About</h1>
+            <p>
+              Its members come from diverse media and disciplines. Through the act of making,
+              the collective explores how materials, space, craft, and new media can speak
+              directly to human perception and lived experience.
+            </p>
+          </article>
+          <article lang="zh-Hant">
+            <h2>關於</h2>
+            <p>
+              成員的背景橫跨不同媒介與學科。原質社相信「去除多餘，回到本質」，
+              並透過製作本身，探索材料、空間、工藝與新媒體如何直接觸及人的感知與經驗。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="members" class="view" data-view="members" aria-labelledby="members-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Directory</p>
+            <h1 id="members-title">Members</h1>
+          </div>
+          <div class="language-note">
+            <span>English</span>
+            <span lang="zh-Hant">繁體中文</span>
+          </div>
+        </div>
+
+        <div id="members-directory" class="members-directory" aria-label="Member directory"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>原质社 RAW COLLECTIVE</span>
+      <span>Interdisciplinary design research group</span>
+    </footer>
+
+    <script src="./members.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
